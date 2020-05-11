@@ -1,0 +1,12 @@
+All the commands related to Go-Lang will be added here for future reference
+
+#01 To Check the version of the Go : go version
+
+* before creating any project make sure to create three folders
+  1-bin
+  2-pkg
+  3-src
+
+#02 To get repositories from github : go get -d github repositories url
+
+#03
