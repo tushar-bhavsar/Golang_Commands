@@ -9,4 +9,16 @@ All the commands related to Go-Lang will be added here for future reference
 
 #02 To get repositories from github : go get -d github repositories url
 
-#03
+#03 To run the file with .go extension = go run (needs a file name, eg, go run main.go)
+                                         go run <file name>
+                                         go run *.go (to run all files which has .go extention)
+
+#04 To Build an EXE file of the Go Application = go build (for an executable:builds the file,reports errors, if any
+if there are no errors, it puts an executable into the current folder)
+                                                 (for a package:builds the file reports errors, if any throws away binary
+
+#05 To Build an EXE file of the Go Application = go install (for an executable:compiles the program (builds it) names the executable
+                                                 mac: the folder name holding the code
+                                                 windows: file name puts the executable in workspace / bin $GOPATH / bin
+                                                 (for a package:compiles the package (builds it) puts the executable in workspace / pkg
+                                                 $GOPATH / pkg makes it an archive file
