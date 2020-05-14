@@ -14,7 +14,7 @@ All the commands related to Go-Lang will be added here for future reference
                                          go run *.go (to run all files which has .go extention)
 
 #04 To Build an EXE file of the Go Application = go build (for an executable:builds the file,reports errors, if any
-if there are no errors, it puts an executable into the current folder)
+                                                  if there are no errors, it puts an executable into the current folder)
                                                  (for a package:builds the file reports errors, if any throws away binary
 
 #05 To Build an EXE file of the Go Application = go install (for an executable:compiles the program (builds it) names the executable
