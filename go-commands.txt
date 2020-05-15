@@ -25,8 +25,34 @@ All the commands related to Go-Lang will be added here for future reference
 
 #06 : Modules
 
+- A module is a collection of related Go packages that are versioned together as a single unit.
+- Modules record precise dependency requirements and create reproducible builds.
+- Modules must be semantically versioned according to semver, usually in the form v(major).(minor).(patch), 
+  such as v0.1.0, v1.2.3, or v1.5.0-rc.1.
+   
+Summarizing the relationship between repositories, modules, and packages:
+
+A repository contains one or more Go modules.
+Each module contains one or more Go packages.
+Each package consists of one or more Go source files in a single directory.
+
 go mod init:- creates a new module, initializing the go.mod file that describes it.
 go build, go test:-  and other package-building commands add new dependencies to go.mod as needed.
-go list -m :- all prints the current module’s dependencies.
 go get :- changes the required version of a dependency (or adds a new dependency).
+go get packagename@verision :- will get that specific version upgrade.
 go mod :- tidy removes unused dependencies.
+go list -m -versions package name: This will show the list of versions the package. 
+go list -m all :- Will show all the imported packages which are the dependencies of the module
+Note: In the go list output, the current module, also known as the main module, is always the first line, followed by dependencies sorted by module path.
+Info : In addition to go.mod, the go command maintains a file named go.sum containing the expected cryptographic hashes of the content of specific module versions
+Info : The indirect comment indicates a dependency is not used directly by this module, only indirectly by other module dependencies
+
+===================================
+
+Basic Programming Structure
+
+# package main : 
+  # func main : Will be the entry point to the Go Programming. when your code exits func main, your program is over
+  
+
+
