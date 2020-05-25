@@ -128,6 +128,29 @@ group #3 - printing to a file or a web server’s response
            func Fprintf(w io.Writer, format string, a ...interface{}) (n int, err error)
            func Fprintln(w io.Writer, a ...interface{}) (n int, err error)
 
+==========================================================================================
+
+Bool :- A boolean type represents the set of Boolean truth values denoted by the predeclared constants true and false. The predeclared boolean type is bool; it is a defined type
+
+INT : A numeric type represents sets of integer or floating-point values.
+
+  Example : 
+            - uint8       the set of all unsigned  8-bit integers (0 to 255)
+            - int8        the set of all signed  8-bit integers (-128 to 127)
+            - float32     the set of all IEEE-754 32-bit floating-point numbers
+            - byte        alias for uint8
+            - rune        alias for int32
+            - There is also a set of predeclared numeric types with implementation-specific sizes:
+              - uint     either 32 or 64 bits
+              - int      same size as uint
+
+String : a string is in effect a read-only slice of bytes.It's important to state right up front that a string holds arbitrary bytes. It is not required to hold Unicode text, UTF-8 text, or any other predefined format. 
+As far as the content of a string is concerned, it is exactly equivalent to a slice of bytes.
+
+s := "This is a sample for Strings"
+s := `"This is an another sample for Strings" , from Golang`
+
+
 
 
 
